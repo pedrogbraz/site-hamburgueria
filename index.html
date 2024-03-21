@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@100;200;300;400;500;600;700&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <title>Hambugueria</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img 
+                src="assets/hamb-1.png"
+                alt=""
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+            />
+
+            <h1 class="text-4xl mt-4 mb-2 font-bold text-white">Byte Saboroso Burgueria</h1>
+
+            <span class="text-white font-medium">Rua Tals, 123, Vila Tals, São Paulo - SP</span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+                <span class="text-white font-medium">Seg á Dom - 18:00 as 23:00</span>
+            </div>
+        </div>
+    </header>
+    <!-- Fim do Header -->
+
+    
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-8">
+        Conheça nosso Menu
+    </h2>
+
+
+    <!-- Inicio do Menu -->
+    <div id="menu">
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!-- Hamburguer 1 -->
+            <div class="flex gap-2">
+                    <img src="assets/hamb-1.png" alt="Hamburger 1" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+                <div class="ml-2">
+                        <p class="font-bold">
+                            Hamburger Duplo Saladas
+                        </p>
+                        <p class="text-sm">O dobro de sabor combinado com frescor! Dois suculentos hambúrgueres acompanhados de uma generosa porção de salada fresca, proporcionando uma explosão de sabor e textura em cada mordida.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 30,90</p>
+                        <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Hamburger Smash" data-price="30.90">
+                            <i class="fa fa-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fim Hamburguer 1 -->
+            <!-- Hamburger 2 -->
+        <div class="flex gap-2">
+            <img src="assets/hamb-2.png" alt="Hamburger 2" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+        <div class="ml-2">
+                <p class="font-bold">
+                    Hamburger Duplo Bacon
+                </p>
+                <p class="text-sm">A indulgência do dobro de sabor, com duas suculentas porções de carne grelhada, acompanhadas de queijo derretido e ingredientes frescos, proporcionando uma experiência de satisfação intensa em cada mordida.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 27,90</p>
+                <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Hamburger Duplo" data-price="27.90">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Hamburguer 2 -->
+            <!-- Hamburguer 3 -->
+            <div class="flex gap-2">
+                <img src="assets/hamb-3.png" alt="Hamburger 3" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+            <div class="ml-2">
+                    <p class="font-bold">
+                        Hamburger Cheddar
+                    </p>
+                    <p class="text-sm">Uma deliciosa combinação de suculento hambúrguer, queijo cheddar derretido e pão macio, criando uma experiência de sabor intensamente satisfatória em cada mordida.</p>
+
+                <div class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 29,90</p>
+                    <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Hamburger Cheddar" data-price="29.90">
+                        <i class="fa fa-cart-plus text-lg text-white"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Hamburguer 3 -->
+        <!-- Hamburguer 4 -->
+        <div class="flex gap-2">
+            <img src="assets/hamb-4.png" alt="Hamburger 4" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+        <div class="ml-2">
+                <p class="font-bold">
+                    Hamburger Chicken
+                </p>
+                <p class="text-sm">Uma opção deliciosamente leve e suculenta, feita com filé de frango grelhado, combinado com vegetais frescos e molho especial, para uma experiência de sabor irresistível em cada pedaço.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 24,90</p>
+                <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Hamburger Chicken" data-price="24.90">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Hamburguer 4 -->
+    <!-- Hamburguer 5 -->
+    <div class="flex gap-2">
+        <img src="assets/hamb-5.png" alt="Hamburger 4" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+    <div class="ml-2">
+            <p class="font-bold">
+                Hamburger Chicken Garden
+            </p>
+            <p class="text-sm">Uma experiência gastronômica fresca e vibrante, com frango suculento e uma variedade de vegetais crocantes, garantindo uma explosão de sabores e texturas em cada mordida.</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 22,40</p>
+            <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Hamburguer Chicken Garden" data-price="22.40">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Fim Hamburguer 5 -->
+<!-- Hamburguer 6 -->
+<div class="flex gap-2">
+    <img src="assets/hamb-6.png" alt="Hamburger 4" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+<div class="ml-2">
+        <p class="font-bold">
+            Hambúrguer Onion Fresh
+        </p>
+        <p class="text-sm">Uma explosão de frescor e crocância, com a combinação perfeita de cebolas caramelizadas e uma generosa porção de salada fresca, envoltas em um delicioso pão macio.</p>
+
+    <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 29,90</p>
+        <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Hamburger Onion Fresh" data-price="29.90">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+</div>
+</div>
+<!-- Fim Hamburguer 6 -->
+<!-- Hamburguer 7 -->
+<div class="flex gap-2">
+    <img src="assets/hamb-7.png" alt="Hamburger 4" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+<div class="ml-2">
+        <p class="font-bold">
+            Hambúrguer Cebolítico
+        </p>
+        <p class="text-sm">Uma explosão de sabores com suculenta carne grelhada, anéis de cebola crocantes e o irresistível toque do queijo cheddar derretido. Uma experiência gastronômica única e saborosa em cada mordida.</p>
+
+    <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 28,90</p>
+        <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Hambúrguer Cebolítico" data-price="28.90">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+</div>
+</div>
+<!-- Fim Hamburguer 7 -->
+<!-- Hamburguer 8 -->
+<div class="flex gap-2">
+    <img src="assets/hamb-8.png" alt="Hamburger 4" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+<div class="ml-2">
+        <p class="font-bold">
+            Hambúrguer Vegano
+        </p>
+        <p class="text-sm">Sabor autêntico e saudável, sem ingredientes de origem animal, oferecendo uma opção deliciosa para quem busca uma alimentação consciente.</p>
+
+    <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 26,90</p>
+        <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Hambúrguer Vegano" data-price="26.90">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+</div>
+</div>
+<!-- Fim Hamburguer 8 -->
+    
+        </main>
+
+        <div class="mx-auto max-w-7xl px-2 my-5">
+            <h2 class="font-bold text-3xl">Bebidas</h2>
+        </div>
+        
+        <!-- Bebidas -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+            <!-- Produto Refrigerante 1 -->
+        <div class="flex gap-2 w-full">
+            <img src="assets/refri-1.png" alt="Coca Cola" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+        <div class="w-full">
+                <p class="font-bold">
+                    Coca Cola
+                </p>
+                <p class="text-sm">O clássico sabor refrescante que une pessoas em todo o mundo, em cada borbulhar de felicidade.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 9,00</p>
+                <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Coca Cola" data-price="9.00">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Refrigerante 1 -->
+            <!-- Produto Refrigerante 2 -->
+        <div class="flex gap-2 w-full">
+            <img src="assets/refri-2.png" alt="Guaraná" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+        <div class="w-full">
+                <p class="font-bold">
+                    Guaraná 
+                </p>
+                <p class="text-sm">O sabor brasileiro autêntico que refresca e encanta, trazendo um toque único de energia e alegria em cada gole.</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 8,00</p>
+                <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Guaraná" data-price="8.00">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- Fim Refrigerante 2 -->
+    <!-- Produto Refrigerante 3 -->
+    <div class="flex gap-2 w-full">
+        <img src="assets/refri-3.png" alt="Fanta Laranja" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+    <div class="w-full">
+            <p class="font-bold">
+                Fanta Laranja 
+            </p>
+            <p class="text-sm">A explosão cítrica de sabor que desperta os sentidos e traz um refresco vibrante para qualquer ocasião.</p>
+
+        <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 7,50</p>
+            <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Fanta Laranja" data-price="7.50">
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+        </div>
+    </div>
+</div>
+<!-- Fim Refrigerante 3 -->
+<!-- Produto Refrigerante 4 -->
+<div class="flex gap-2 w-full">
+    <img src="assets/refri-4.png" alt="Fanta Uva" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+<div class="w-full">
+        <p class="font-bold">
+            Fanta Uva 
+        </p>
+        <p class="text-sm">O sabor intenso e refrescante da uva em cada gole, para uma experiência vibrante e deliciosamente refrescante.</p>
+
+    <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 7,50</p>
+        <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Fanta Uva" data-price="7.50">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+</div>
+</div>
+<!-- Fim Refrigerante 4 -->
+<!-- Produto Refrigerante 5 -->
+<div class="flex gap-2 w-full">
+    <img src="assets/refri-5.png" alt="Pepsi" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"> 
+
+<div class="w-full">
+        <p class="font-bold">
+            Pepsi 
+        </p>
+        <p class="text-sm">Uma explosão de sabor ousado e refrescante que cativa os sentidos, oferecendo uma experiência única e revigorante em cada gole.</p>
+
+    <div class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 8,50</p>
+        <button class="bg-green-600 px-5 rounded add-to-cart-btn" data-name="Pepsi" data-price="8.50">
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </div>
+</div>
+</div>
+<!-- Fim Refrigerante 5 -->
+        </div>
+        <!-- Fim do Bebidas -->
+
+        </div>
+    </div>
+    <!-- Fim do Menu -->
+
+
+    <!-- Modal Cart -->
+
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+            <h2 class="text-center font-bold text-2xl mb-2">Meu Carrinho</h2>
+
+            <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+            <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+            <p class="font-bold mt-4">Endereo de Entrega:</p>
+            <input type="text" class="w-full border-2 p-1 rounded my-1 outline-none" id="address" placeholder="Digite seu endereço">
+            <p class="text-red-500 hidden" id="address-warn">Digite seu endereço completo!</p>
+            <div class="flex justify-between mt-4 w-full">
+                <button id="close-modal-btn">Fechar</button>
+                <button class="bg-green-500 text-white px-4 py-1 rounded hover:scale-105 duration-300" id="checkout-btn">Finalizar Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fim Modal Cart -->
+
+    <!-- Button Cart Footer -->
+    <footer class="w-full bg-green-600 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            (<span id="cart-count">0</span>)
+            Veja meu carrinho
+            <i class="fa fa-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <!-- Fim Button Cart Footer -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
