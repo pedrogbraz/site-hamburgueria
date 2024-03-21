@@ -2,7 +2,8 @@
 
 <p align="left">
 <b>Site para Hamburgueria</b> que desenvolvi do zero usando <b>HTML, CSS, Tailwindcss e JavaScript</b><br/>
-Desenvolvi esse site conforme uma Aula de Tailwindcss que fiz para me aprimorar em Tailwindcss pois até então eu não possuia tanta Habilidade.
+Desenvolvi esse site conforme uma Aula de Tailwindcss que fiz para me aprimorar em Tailwindcss pois até então eu não possuia tanta Habilidade.<br>
+Caso queira ver mais, hospedei ela: https://hambugueria.netlify.app/
 </p>
 
 <br>
